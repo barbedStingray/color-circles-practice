@@ -1,0 +1,39 @@
+
+#circle-counts {
+    margin-left: 5px;
+}
+
+
+#circles {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#buttons {
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.circle {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px black solid;
+}
+
+.red-fill {
+    background-color: red;
+}
+.blue-fill {
+    background-color: blue;
+}
+.green-fill {
+    background-color: green;
+}
+.yellow-fill {
+    background-color: yellow;
+}
+

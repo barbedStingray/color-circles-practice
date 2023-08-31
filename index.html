@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="client.js" defer></script>
-  <title>Color Blocks</title>
+  <title>Color Circles</title>
 </head>
 
 
 <body>
-    <header id="block-counts">
+    <header id="circle-counts">
             <p>Red Count:<span id="red-count">1</span></p>
             <p>Blue Count:<span id="blue-count">1</span></p>
             <p>Green Count:<span id="green-count">1</span></p>
@@ -21,18 +21,19 @@
 
     <main>
         <section id="buttons">
-
-
-
+            <button id="red-button" onclick="addCircle(`red`)">Red</button>
+            <button id="red-button" onclick="addCircle(`blue`)">Blue</button>
+            <button id="red-button" onclick="addCircle(`green`)">Green</button>
+            <button id="red-button" onclick="addCircle(`yellow`)">Yellow</button>
         </section>
 
-        <section id="blocks">
-            <div class="block red-fill"></div>
-            <div class="block blue-fill"></div>
-            <div class="block green-fill"></div>
-            <div class="block yellow-fill"></div>
+        <section id="circles">
+            <div class="circle red-fill"></div>
+            <div class="circle blue-fill"></div>
+            <div class="circle green-fill"></div>
+            <div class="circle yellow-fill"></div>
         </section>
-        
+
     </main>
 </body>
 </html>
