@@ -21,10 +21,14 @@
 
     <main>
         <section id="buttons">
-            <button id="red-button" onclick="addCircle(`red`)">Red</button>
-            <button id="red-button" onclick="addCircle(`blue`)">Blue</button>
-            <button id="red-button" onclick="addCircle(`green`)">Green</button>
-            <button id="red-button" onclick="addCircle(`yellow`)">Yellow</button>
+            <button id="red-button" onclick="addMultipleCircles(`red`)">Red</button>
+            <button id="red-button" onclick="addMultipleCircles(`blue`)">Blue</button>
+            <button id="red-button" onclick="addMultipleCircles(`green`)">Green</button>
+            <button id="red-button" onclick="addMultipleCircles(`yellow`)">Yellow</button>
+            <button id="clearAll" onclick="clearAll()">Clear All</button>
+            <div>
+                <input type="text" id="numberInput" name="numberInput" placeholder=0>
+            </div>
         </section>
 
         <section id="circles">
