@@ -7,13 +7,15 @@ const blueCounter = document.querySelector(`#blue-count`);
 const greenCounter = document.querySelector(`#green-count`);
 const yellowCounter = document.querySelector(`#yellow-count`);
 const multipleCircles = document.querySelector(`#numberInput`);
+const custCounter = document.querySelector(`#custom-count`);
 
 let redCount = 1;
 let blueCount = 1;
 let greenCount = 1;
 let yellowCount = 1;
+let customCount = 0;
 
-function addCircle(color){
+function addCircle(color=document.getElementById(`customInput`).value){
     if( color === `red` ) {
         circlesDiv.innerHTML += `<div class="circle red-fill"></div>`;
         redCount++;
@@ -34,6 +36,11 @@ function addCircle(color){
         yellowCount++;
         yellowCounter.innerHTML = yellowCount;
     }//end yellow
+    else {
+        circlesDiv.innerHTML += `<div class="circle custom-fill" style='--custom:${color}'></div>`;
+        customCount++;
+        custCounter.innerHTML = customCount;
+    }
 }//end function
 
 function clearAll(){
@@ -46,6 +53,8 @@ function clearAll(){
     greenCounter.innerHTML = greenCount;
     yellowCount = 0;
     yellowCounter.innerHTML = yellowCount;
+    customCount = 0;
+    custCounter.innerHTML = customCount;
 }
 
 function addMultipleCircles(color, num = document.getElementById(`numberInput`).value) {

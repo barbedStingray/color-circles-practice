@@ -37,3 +37,7 @@
     background-color: yellow;
 }
 
+.custom-fill {
+    background-color: var(--custom);
+}
+

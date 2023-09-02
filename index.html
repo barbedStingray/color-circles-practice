@@ -13,10 +13,11 @@
 
 <body>
     <header id="circle-counts">
-            <p>Red Count:<span id="red-count">1</span></p>
-            <p>Blue Count:<span id="blue-count">1</span></p>
-            <p>Green Count:<span id="green-count">1</span></p>
-            <p>Yellow Count:<span id="yellow-count">1</span></p>
+            <p>Red Count:   <span id="red-count">1</span></p>
+            <p>Blue Count:  <span id="blue-count">1</span></p>
+            <p>Green Count: <span id="green-count">1</span></p>
+            <p>Yellow Count:    <span id="yellow-count">1</span></p>
+            <p>Custom Count:    <span id="custom-count">0</span></p>
     </header>
 
     <main>
@@ -27,8 +28,14 @@
             <button id="red-button" onclick="addMultipleCircles(`yellow`)">Yellow</button>
             <button id="clearAll" onclick="clearAll()">Clear All</button>
             <div>
-                <input type="text" id="numberInput" name="numberInput" placeholder=0>
+                <input type="text" id="numberInput" name="numberInput" placeholder=0><span id
             </div>
+            <!-- adding the custom color -->
+            <div>
+                <input type="text" id="customInput" name="customInput" placeholder="pick a color...">
+                <input value="Custom" type="submit" onclick="addMultipleCircles()"></button>
+            </div>
+
         </section>
 
         <section id="circles">
